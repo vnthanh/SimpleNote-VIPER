@@ -29,4 +29,8 @@ extension NotesPresenter: NotesInteractorOutputProtocol {
     func didRecieveNotesData(_ notes: [NoteModel]) {
         view?.showNotes(notes)
     }
+    
+    func showNoteDetail(_ note: NoteModel) {
+        router?.showNoteDetail(from: view!, note: note)
+    }
 }

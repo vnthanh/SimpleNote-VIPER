@@ -26,6 +26,7 @@ protocol NotesPresenterProtocol: class {
     // Get didLoad event from view
     func viewDidLoad()
     func addNewNote(_ noteContent: String)
+    func showNoteDetail(_ note: NoteModel)
 }
 
 protocol NotesInteractorInputProtocol: class {
@@ -43,4 +44,6 @@ protocol NotesInteractorOutputProtocol: class {
 
 protocol NotesRouterProtocol: class {
     static func createNotesModule() -> UIViewController
+    
+    func showNoteDetail(from view: NotesViewProtocol, note: NoteModel)
 }

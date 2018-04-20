@@ -59,6 +59,11 @@ extension NotesView: UITableViewDataSource, UITableViewDelegate {
         return notes.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedNote = notes[indexPath.row]
+        presenter?.showNoteDetail(selectedNote)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
         let note = notes[indexPath.row]
