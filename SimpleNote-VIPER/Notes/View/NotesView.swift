@@ -7,15 +7,27 @@
 //
 
 import UIKit
+import RxSwift
 
 class NotesView: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var notes: [NoteModel] = []
+    @IBOutlet weak var clearNotesButton: UIButton!
+    @IBOutlet weak var notesCountLabel: UILabel!
+    //    var notes: [NoteModel] = []
     weak var presenter: NotesPresenterProtocol?
+    
+    // Play with RxSwift
+    private let bag = DisposeBag()
+    private let notes = Variable<[NoteModel]>([])
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+        
+        // Add subscriber to notes
+        notes.asObservable().subscribe(onNext: { [weak self] notes in
+            self?.updateUI()
+        }).disposed(by: bag)
     }
     
     @IBAction func addNote() {
@@ -38,16 +50,26 @@ class NotesView: UIViewController {
         alert.addAction(cancelAction)
         present(alert, animated: true)
     }
+    
+    @IBAction func clearAllNotes() {
+        presenter?.clearAllNotes()
+    }
+    
+    private func updateUI() {
+        // UI update each time notes [] changes
+        clearNotesButton.isHidden = !(notes.value.count > 0)
+        notesCountLabel.text = "Notes: \(notes.value.count)"
+    }
 }
 
 extension NotesView: NotesViewProtocol {
     func appendAndShowNewNotes(newNote: NoteModel) {
-        self.notes.append(newNote)
+        self.notes.value.append(newNote)
         tableView.reloadData()
     }
     
     func showNotes(_ notes: [NoteModel]) {
-        self.notes = notes
+        self.notes.value = notes
         tableView.reloadData()
     }
     
@@ -56,17 +78,17 @@ extension NotesView: NotesViewProtocol {
 
 extension NotesView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
+        return notes.value.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedNote = notes[indexPath.row]
+        let selectedNote = notes.value[indexPath.row]
         presenter?.showNoteDetail(selectedNote)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
-        let note = notes[indexPath.row]
+        let note = notes.value[indexPath.row]
         cell.textLabel?.text = note.content
         
         return cell

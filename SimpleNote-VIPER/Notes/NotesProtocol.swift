@@ -27,6 +27,7 @@ protocol NotesPresenterProtocol: class {
     func viewDidLoad()
     func addNewNote(_ noteContent: String)
     func showNoteDetail(_ note: NoteModel)
+    func clearAllNotes()
 }
 
 protocol NotesInteractorInputProtocol: class {
@@ -35,11 +36,13 @@ protocol NotesInteractorInputProtocol: class {
     // Get data request from presenter
     func fetchDataLocally()
     func saveNewNoteLocally(newNote: NoteModel)
+    func clearNotesLocally()
 }
 
 protocol NotesInteractorOutputProtocol: class {
     // Pass data result to presenter
     func didRecieveNotesData(_ notes: [NoteModel])
+    func didClearNotesLocally()
 }
 
 protocol NotesRouterProtocol: class {

@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="faL-kL-sor">
-                                <rect key="frame" x="0.0" y="64" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="523"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="wRd-le-4xp">
@@ -49,21 +49,46 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="P8Z-Mp-dA1"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-RN-tCI">
+                                <rect key="frame" x="0.0" y="607" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.2497219424884074" blue="0.39970429609526537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Clear all notes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearAllNotes" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Qw-0o-ZOQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg8-h0-Dgu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oWB-nA-Q0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7pO-9M-tlH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="faL-kL-sor" secondAttribute="trailing" id="7qU-Oz-hky"/>
+                            <constraint firstItem="faL-kL-sor" firstAttribute="top" secondItem="vg8-h0-Dgu" secondAttribute="bottom" id="N2V-cQ-xgr"/>
                             <constraint firstItem="oWB-nA-Q0f" firstAttribute="top" secondItem="faL-kL-sor" secondAttribute="bottom" id="Oe4-on-wiA"/>
-                            <constraint firstItem="faL-kL-sor" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bK6-Qt-Y2S"/>
+                            <constraint firstItem="vg8-h0-Dgu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ROb-fC-DhC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vg8-h0-Dgu" secondAttribute="trailing" id="TXL-88-xpC"/>
+                            <constraint firstItem="oWB-nA-Q0f" firstAttribute="top" secondItem="8yX-RN-tCI" secondAttribute="bottom" id="ZzQ-eD-cJN"/>
+                            <constraint firstItem="faL-kL-sor" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="bK6-Qt-Y2S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oWB-nA-Q0f" secondAttribute="trailing" id="bnB-u7-iqU"/>
+                            <constraint firstItem="8yX-RN-tCI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g4u-JE-CaQ"/>
+                            <constraint firstItem="vg8-h0-Dgu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iMX-WW-qnW"/>
                             <constraint firstItem="faL-kL-sor" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jcE-SJ-V26"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oWB-nA-Q0f" secondAttribute="bottom" id="jrL-ep-3uT"/>
+                            <constraint firstItem="8yX-RN-tCI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oeU-TG-U0c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hMA-NH-S57"/>
                     <connections>
+                        <outlet property="clearNotesButton" destination="8yX-RN-tCI" id="62t-oZ-Qzz"/>
+                        <outlet property="notesCountLabel" destination="vg8-h0-Dgu" id="Znx-gG-jdg"/>
                         <outlet property="tableView" destination="faL-kL-sor" id="lh4-eA-kJb"/>
                         <segue destination="azA-Bc-9TY" kind="show" id="Ukt-5b-ICl"/>
                     </connections>

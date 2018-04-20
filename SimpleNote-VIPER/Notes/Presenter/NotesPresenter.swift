@@ -23,6 +23,10 @@ class NotesPresenter: NotesPresenterProtocol {
         // Tell the view to append and show list with new added note
         view?.appendAndShowNewNotes(newNote: newNote)
     }
+    
+    func clearAllNotes() {
+        interactor?.clearNotesLocally()
+    }
 }
 
 extension NotesPresenter: NotesInteractorOutputProtocol {
@@ -32,5 +36,9 @@ extension NotesPresenter: NotesInteractorOutputProtocol {
     
     func showNoteDetail(_ note: NoteModel) {
         router?.showNoteDetail(from: view!, note: note)
+    }
+    
+    func didClearNotesLocally() {
+        view?.showNotes([])
     }
 }

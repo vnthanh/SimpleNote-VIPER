@@ -33,4 +33,9 @@ class NotesInteractor: NotesInteractorInputProtocol {
         let notes: [String] = [newNote.content!]
         UserDefaults.standard.set(notes, forKey: "Notes")
     }
+    
+    func clearNotesLocally() {
+        UserDefaults.standard.removeObject(forKey: "Notes")
+        presenter?.didClearNotesLocally()
+    }
 }

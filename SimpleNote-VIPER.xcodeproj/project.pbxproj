@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41F1C0059845F57CA2C49B8C /* Pods_SimpleNote_VIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0745DEDCCA87BC2DF2A62B7F /* Pods_SimpleNote_VIPERTests.framework */; };
+		689F27B01EE6A6C1E172B6D3 /* Pods_SimpleNote_VIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080C87998A6C80E8261FAB46 /* Pods_SimpleNote_VIPERUITests.framework */; };
 		6C43A94A2086DFA70000183F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43A9492086DFA70000183F /* AppDelegate.swift */; };
 		6C43A94F2086DFA70000183F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C43A94D2086DFA70000183F /* Main.storyboard */; };
 		6C43A9512086DFA80000183F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C43A9502086DFA80000183F /* Assets.xcassets */; };
@@ -23,6 +25,7 @@
 		6C844F9220898654007E5BD3 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C844F9120898654007E5BD3 /* NoteDetailView.swift */; };
 		6C844F94208989AE007E5BD3 /* NoteDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C844F93208989AE007E5BD3 /* NoteDetailPresenter.swift */; };
 		6C844F9620898C7E007E5BD3 /* NoteDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C844F9520898C7E007E5BD3 /* NoteDetailRouter.swift */; };
+		BD10766FFB955BEB5FA65C7E /* Pods_SimpleNote_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEF9806A060FE7C9E57EA09 /* Pods_SimpleNote_VIPER.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0745DEDCCA87BC2DF2A62B7F /* Pods_SimpleNote_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNote_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		080C87998A6C80E8261FAB46 /* Pods_SimpleNote_VIPERUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNote_VIPERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C6E26F3DF3C2AD879F2A6C /* Pods-SimpleNote-VIPERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote-VIPERUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote-VIPERUITests/Pods-SimpleNote-VIPERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6BEF9806A060FE7C9E57EA09 /* Pods_SimpleNote_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNote_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C43A9462086DFA70000183F /* SimpleNote-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleNote-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C43A9492086DFA70000183F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C43A94E2086DFA70000183F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +72,11 @@
 		6C844F9120898654007E5BD3 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		6C844F93208989AE007E5BD3 /* NoteDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailPresenter.swift; sourceTree = "<group>"; };
 		6C844F9520898C7E007E5BD3 /* NoteDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailRouter.swift; sourceTree = "<group>"; };
+		7E8EA0C3FD69F5936667C691 /* Pods-SimpleNote-VIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote-VIPERTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote-VIPERTests/Pods-SimpleNote-VIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB9D2D17346CF4E9CFFC408 /* Pods-SimpleNote-VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote-VIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote-VIPER/Pods-SimpleNote-VIPER.release.xcconfig"; sourceTree = "<group>"; };
+		91B0A6F59BCA5535C71293B8 /* Pods-SimpleNote-VIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote-VIPERTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote-VIPERTests/Pods-SimpleNote-VIPERTests.release.xcconfig"; sourceTree = "<group>"; };
+		D76A8E16593DA6475AD233BE /* Pods-SimpleNote-VIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote-VIPERUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote-VIPERUITests/Pods-SimpleNote-VIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E607F31CEA102E76D6DE069D /* Pods-SimpleNote-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNote-VIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNote-VIPER/Pods-SimpleNote-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD10766FFB955BEB5FA65C7E /* Pods_SimpleNote_VIPER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F1C0059845F57CA2C49B8C /* Pods_SimpleNote_VIPERTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +100,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689F27B01EE6A6C1E172B6D3 /* Pods_SimpleNote_VIPERUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05816416B804974C7248E093 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E607F31CEA102E76D6DE069D /* Pods-SimpleNote-VIPER.debug.xcconfig */,
+				7FB9D2D17346CF4E9CFFC408 /* Pods-SimpleNote-VIPER.release.xcconfig */,
+				7E8EA0C3FD69F5936667C691 /* Pods-SimpleNote-VIPERTests.debug.xcconfig */,
+				91B0A6F59BCA5535C71293B8 /* Pods-SimpleNote-VIPERTests.release.xcconfig */,
+				D76A8E16593DA6475AD233BE /* Pods-SimpleNote-VIPERUITests.debug.xcconfig */,
+				66C6E26F3DF3C2AD879F2A6C /* Pods-SimpleNote-VIPERUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6C43A93D2086DFA70000183F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +127,8 @@
 				6C43A95D2086DFA80000183F /* SimpleNote-VIPERTests */,
 				6C43A9682086DFA80000183F /* SimpleNote-VIPERUITests */,
 				6C43A9472086DFA70000183F /* Products */,
+				05816416B804974C7248E093 /* Pods */,
+				CB4B00B5C3AAC1723F37FCF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +262,16 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		CB4B00B5C3AAC1723F37FCF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BEF9806A060FE7C9E57EA09 /* Pods_SimpleNote_VIPER.framework */,
+				0745DEDCCA87BC2DF2A62B7F /* Pods_SimpleNote_VIPERTests.framework */,
+				080C87998A6C80E8261FAB46 /* Pods_SimpleNote_VIPERUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C43A96E2086DFA80000183F /* Build configuration list for PBXNativeTarget "SimpleNote-VIPER" */;
 			buildPhases = (
+				1C7CCF96F5E9989D1BEBE61E /* [CP] Check Pods Manifest.lock */,
 				6C43A9422086DFA70000183F /* Sources */,
 				6C43A9432086DFA70000183F /* Frameworks */,
 				6C43A9442086DFA70000183F /* Resources */,
+				5FD0D131BDED32BF8F4D915E /* [CP] Embed Pods Frameworks */,
+				77EC1BA3BC4C9DD552225957 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,9 +299,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C43A9712086DFA80000183F /* Build configuration list for PBXNativeTarget "SimpleNote-VIPERTests" */;
 			buildPhases = (
+				614A0A1EFB9CF9F39C895FE9 /* [CP] Check Pods Manifest.lock */,
 				6C43A9562086DFA80000183F /* Sources */,
 				6C43A9572086DFA80000183F /* Frameworks */,
 				6C43A9582086DFA80000183F /* Resources */,
+				4A78314DDACC18EE418862E3 /* [CP] Embed Pods Frameworks */,
+				104BC3D57502EA51D95A045F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,9 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C43A9742086DFA80000183F /* Build configuration list for PBXNativeTarget "SimpleNote-VIPERUITests" */;
 			buildPhases = (
+				E287AC48C515B928662A3542 /* [CP] Check Pods Manifest.lock */,
 				6C43A9612086DFA80000183F /* Sources */,
 				6C43A9622086DFA80000183F /* Frameworks */,
 				6C43A9632086DFA80000183F /* Resources */,
+				1049B6ECF6A21AFBD89BBBD6 /* [CP] Embed Pods Frameworks */,
+				20A6A4668EED8744248435A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,6 +406,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1049B6ECF6A21AFBD89BBBD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote-VIPERUITests/Pods-SimpleNote-VIPERUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		104BC3D57502EA51D95A045F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote-VIPERTests/Pods-SimpleNote-VIPERTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C7CCF96F5E9989D1BEBE61E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleNote-VIPER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20A6A4668EED8744248435A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote-VIPERUITests/Pods-SimpleNote-VIPERUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A78314DDACC18EE418862E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote-VIPERTests/Pods-SimpleNote-VIPERTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FD0D131BDED32BF8F4D915E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote-VIPER/Pods-SimpleNote-VIPER-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote-VIPER/Pods-SimpleNote-VIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		614A0A1EFB9CF9F39C895FE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleNote-VIPERTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77EC1BA3BC4C9DD552225957 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNote-VIPER/Pods-SimpleNote-VIPER-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E287AC48C515B928662A3542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleNote-VIPERUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C43A9422086DFA70000183F /* Sources */ = {
@@ -544,14 +743,12 @@
 		};
 		6C43A96F2086DFA80000183F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E607F31CEA102E76D6DE069D /* Pods-SimpleNote-VIPER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SimpleNote-VIPER/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vng.SimpleNote-VIPER";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -561,14 +758,12 @@
 		};
 		6C43A9702086DFA80000183F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB9D2D17346CF4E9CFFC408 /* Pods-SimpleNote-VIPER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SimpleNote-VIPER/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vng.SimpleNote-VIPER";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -578,16 +773,13 @@
 		};
 		6C43A9722086DFA80000183F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E8EA0C3FD69F5936667C691 /* Pods-SimpleNote-VIPERTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SimpleNote-VIPERTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vng.SimpleNote-VIPERTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -598,16 +790,13 @@
 		};
 		6C43A9732086DFA80000183F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B0A6F59BCA5535C71293B8 /* Pods-SimpleNote-VIPERTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SimpleNote-VIPERTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vng.SimpleNote-VIPERTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -618,15 +807,12 @@
 		};
 		6C43A9752086DFA80000183F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D76A8E16593DA6475AD233BE /* Pods-SimpleNote-VIPERUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SimpleNote-VIPERUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vng.SimpleNote-VIPERUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -637,15 +823,12 @@
 		};
 		6C43A9762086DFA80000183F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C6E26F3DF3C2AD879F2A6C /* Pods-SimpleNote-VIPERUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SimpleNote-VIPERUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vng.SimpleNote-VIPERUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
